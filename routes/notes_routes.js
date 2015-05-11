@@ -29,7 +29,7 @@ module.exports = function(router){
 		});
 	});
 
-	router.put('/data',function(req, res){
+	router.put('/data:id',function(req, res){
 		fs.writeFile('./data/file.json', JSON.stringify(req.body, null, 2), function(err){
 			if(err){
 				console.log(err);
@@ -40,10 +40,10 @@ module.exports = function(router){
 		});
 	});
 
-	router.patch('/data', function(req, res){
+	router.patch('/data/:id', function(req, res){
 		var infoRequest = JSON.stringify(req.body, null, 2);
 		var requestID = req.params.id;
-
+		console.log('the id is: ' + requestID);
 		fs.readFile('./data/file.json', function(err, data){
 			if(err){
 				console.log(err);
