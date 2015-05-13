@@ -1,0 +1,32 @@
+{
+  "name": "Async-bitmap-transform",
+  "version": "0.1.0",
+  "description": "For this assignment you will be building a Bitmap reader and transformer. It will read a Bitmap in from disk, run one or more color transforms on the bitmap and then write it out to a new file. This project will require the use of node buffers in order to manipulate binary data. Your project should include tests, as well as a Gruntfile and package.json file. Make sure to run all your code through jshint and jscs. The process will look something like this:",
+  "main": "bitmapTransform.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-simple-mocha": "^0.4.0",
+    "mocha": "^2.2.4"
+  },
+  "scripts": {
+    "test": "./node_modules/grunt-cli/bin/grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/truyennguyen/Async-bitmap-transform.git"
+  },
+  "author": "truyennguyen, raineroviir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/truyennguyen/Async-bitmap-transform/issues"
+  },
+  "homepage": "https://github.com/truyennguyen/Async-bitmap-transform"
+}
